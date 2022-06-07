@@ -1,0 +1,251 @@
+@charset "UTF-8";
+* {
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  color: #0a043c;
+  background-color: #fdfaf6;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+header,
+footer,
+nav {
+  background-color: #fdfaf6;
+}
+
+header {
+  padding: 10px;
+  text-align: center;
+  font-size: 1.9rem;
+}
+
+a {
+  text-decoration: none;
+  color: #0a043c;
+}
+
+a:visited {
+  color: #0a043c;
+}
+
+a:hover {
+  color: #0a043c;
+}
+
+.card-footer {
+  text-align: center;
+  padding: 0;
+}
+
+.card-footer__texto {
+  margin-bottom: 0;
+  background-color: #fdfaf6;
+}
+
+.card-footer__redes {
+  background-color: #fdfaf6;
+}
+
+.card-footer__img {
+  background-color: #fdfaf6;
+}
+
+/* -- I N D E X -- */
+.row {
+  margin: 80px 0 80px 0;
+}
+
+.row a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.row a:visited {
+  color: #0a043c;
+}
+
+.row-c {
+  text-align: center;
+}
+
+.fade-in-fwd {
+  animation: fade-in-fwd 10s ease-out forwards;
+}
+
+@keyframes fade-in-fwd {
+  0% {
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+/* -- N A V -- de todas las páginas menos la Principal -- */
+.nav-link {
+  color: #0a043c;
+}
+
+li a:hover {
+  background-color: #9ecca4;
+}
+
+/* -- S O B R E  N O S O T R O S -- */
+.containerNosotros {
+  display: grid;
+  grid-template-areas: "headerNosotros"
+ "mainNosotros"
+ "contactoNosotros";
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  height: auto;
+  margin: 0;
+  text-align: justify;
+  min-height: 100vh;
+}
+
+.mainNos {
+  min-height: 70vh;
+}
+
+.headerNosotros {
+  grid-area: headerNosotros;
+}
+
+.tituloNosotros {
+  text-align: center;
+  margin: 45px;
+  font-size: 1.8rem;
+}
+
+.mainNosotros {
+  grid-area: mainNosotros;
+  display: flex;
+  padding: 10px;
+  margin: 40px;
+  font-size: 1.2rem;
+  justify-content: flex-end;
+}
+
+.contactoNosotros {
+  grid-area: contactoNosotros;
+  text-align: center;
+}
+
+.fotoGato {
+  margin: 20px;
+}
+
+/* -- N O V E D A D E S -- */
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 45px;
+  padding: 0x;
+}
+
+.tituloNovedades {
+  display: flex;
+  text-align: center;
+  margin: 50px;
+  font-size: 1.8rem;
+}
+
+.tarjeta {
+  display: flex;
+  text-align: justify;
+  padding: 10px;
+  margin: 40px;
+  float: left;
+  font-size: 1.2rem;
+}
+
+.tarjeta__titulo {
+  font-size: 1.5rem;
+}
+
+.tarjeta__img {
+  display: flex;
+  margin-right: 30px;
+  width: 500px;
+  height: 400px;
+}
+
+.tarjeta__parrafo {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .tarjeta {
+    flex-wrap: wrap;
+  }
+  .tarjeta__img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+  }
+  .tarjeta__titulo {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+  .contenedor {
+    margin: 0;
+  }
+}
+
+/* -- C O N T A C T A N O S -- */
+.information {
+  text-align: center;
+  margin: 45px 0 45px 0;
+  font-size: 1.2rem;
+}
+
+.datos input,
+textarea {
+  width: 50%;
+}
+
+/* -- N U E S T R O S  P R O D U C T O S -- */
+.tituloProductos {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: 45px;
+  font-size: 1.8rem;
+}
+
+.tarjeta__video {
+  display: flex;
+  padding: 10px;
+  margin: 40px;
+}
+
+.tarjetaP {
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .tarjetaP {
+    text-align: justify;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footerP {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
